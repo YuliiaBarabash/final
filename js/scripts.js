@@ -44,38 +44,6 @@ $(document).ready(function () {
 })
 
 
-
-
-
-
-
-
-// // VIDEO
-
-// $(function () {
-// 	var $videoContainer = $('#video-container'),
-// 		$videoControls = $('.section__video-control'),
-// 		$video = $('#Video')[0];
-
-// 	$videoControls.click(function () {
-// 		if ($video.paused) {
-// 			$video.play();
-// 			$videoContainer.addClass('video-is-playing');
-// 		} else {
-// 			$video.pause();
-// 			$videoContainer.removeClass('video-is-playing');
-// 		}
-// 	});
-// });
-
-// $(document).on('click', '#video-play', function() {
-// 	var $video = $('#video'),
-// 		src = $video.attr('src');
-
-// 	$video.attr('src', src + '&autoplay=0');
-// });
-
-
 // РАБОЧИЙ СКРИПТ ЗАКРІТИЕ ВИДЕО
 var timeVar = '';
 
@@ -143,28 +111,6 @@ burger.onclick = function () {
   header.classList.toggle("menu-open");
 };
 
-// Counter
-// const counters = document.querySelectorAll('.section__counter');
-// const speed = 900;
-
-// counters.forEach(counter => {
-//   const animate = () => {
-//     const value = +counter.getAttribute('.data-number');
-//     const data = +counter.innerText;
-
-//     const time = value / speed;
-//     if (data < value) {
-//       counter.innerText = Math.ceil(data + time);
-//       setTimeout(animate, 1);
-//     } else {
-//       counter.innerText = value;
-//     }
-//   }
-
-//   animate();
-// });
-
-
 var a = 0;
 $(window).scroll(function () {
 
@@ -196,30 +142,6 @@ $(window).scroll(function () {
   }
 
 });
-
-
-// // Counter To Count Number Visit
-// var a = 0;
-// $(window).scroll(function() {
-
-//   var oTop = $('#counter').offset().top - window.innerHeight;
-//   // Md.Asaduzzaman Muhid
-//   if (a == 0 && $(window).scrollTop() > oTop) {
-//     $('.counter').each(function() {
-//         var $this = $(this);
-//         jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-//             duration: 2000,
-//             easing: 'swing',
-//             step: function () {
-//                 $this.text(Math.ceil(this.Counter));
-//             }
-//         });
-//     });
-//     a = 1;// Md.Asaduzzaman Muhid
-//   }
-// });
-
-// Modal
 
 const exampleModal = document.getElementById('contact')
 exampleModal.addEventListener('show.bs.modal', event => {

@@ -127,7 +127,6 @@ $secondary-color: #f07566;
         height: 48px;
     }
 
-
     @media screen and (min-width: 900px) {
 
         .header {
@@ -135,7 +134,16 @@ $secondary-color: #f07566;
             width: 100%;
             padding-bottom: 0;
 
+            &__logo-svg {
+                
+                &:hover {
+                    fill: $secondary-color;
+                }
+            }
+
             &__btn {
+
+                cursor: pointer;
 
                 &:hover {
                     background-color: $secondary-color;
@@ -195,6 +203,7 @@ $secondary-color: #f07566;
                 color: $main-color;
                 font-family: $secondary-font-stack;
                 font-size: $secondary-font-size;
+                transition: all .5s ease-in-out;
 
                 &:hover {
                     transform: scale(1.5);
@@ -1196,8 +1205,6 @@ $secondary-color: #f07566;
         width: 306px;
 
         &_main {
-            padding: 20px;
-            width: 494px;
             align-content: flex-start;
         }
 
@@ -1394,6 +1401,13 @@ $secondary-color: #f07566;
 
             &_hidden {
                 display: block;
+            }
+        }
+
+        &__card-description {
+
+            &_main {
+                width: 494px;
             }
         }
 
@@ -1739,12 +1753,21 @@ $secondary-color: #f07566;
         }
 
         &__btn {
+            
             grid-column: span 2;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $secondary-color;
+                border-color: #fef9e9;
+                color: #fef9e9;
+            }
 
             &_centered {
                 grid-column: span 3;
 
                 &:hover {
+                    cursor: pointer;
                     background-color: $secondary-color;
                     border-color: #fef9e9;
                     color: #fef9e9;
@@ -1782,7 +1805,7 @@ $secondary-color: #f07566;
         }
 
         &__card {
-            transition: all .2s ease-in-out;
+            transition: all .5s ease-in-out;
             width: 270px;
             height: 368px;
             cursor: pointer;
@@ -1813,7 +1836,7 @@ $secondary-color: #f07566;
             padding: 16px 16px 32px 16px;
             width: 370px;
             height: 384px;
-            transition: all .2s ease-in-out;
+            transition: all .5s ease-in-out;
 
             &:hover {
                 box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
@@ -2039,6 +2062,16 @@ $secondary-color: #f07566;
         &__policy-link {
             margin: 0;
             text-align: left;
+        }
+
+        &__logo-svg {
+
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                fill: #fef9e9;
+                transform: scale(1.4);
+            }
         }
 
     }
