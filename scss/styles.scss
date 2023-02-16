@@ -135,7 +135,7 @@ $secondary-color: #f07566;
             padding-bottom: 0;
 
             &__logo-svg {
-                
+
                 &:hover {
                     fill: $secondary-color;
                 }
@@ -1159,8 +1159,8 @@ $secondary-color: #f07566;
     }
 
     &__card-img-wrap {
-        min-width: 297px;
-        height: 320px;
+        width: 297px;
+        height: 219px;
         overflow: hidden;
         border-radius: 0 0 50px 0;
 
@@ -1274,7 +1274,8 @@ $secondary-color: #f07566;
     }
 
     &__article-card {
-        width: 100%;
+        display: flex;
+        width: 329px;
         min-height: 352px;
         border: 1px solid #E6EDF5;
         border-radius: 8px;
@@ -1289,7 +1290,7 @@ $secondary-color: #f07566;
             border-radius: 8px;
             padding: 16px 16px 39px;
             margin: 45px 0 16px 0;
-            width: 375px;
+            width: 329px;
             height: 528px;
         }
     }
@@ -1753,7 +1754,7 @@ $secondary-color: #f07566;
         }
 
         &__btn {
-            
+
             grid-column: span 2;
 
             &:hover {
@@ -1908,6 +1909,7 @@ $secondary-color: #f07566;
 }
 
 .footer {
+    width: 100%;
     margin-top: 112px;
     background: #3F3836;
 
@@ -1933,6 +1935,11 @@ $secondary-color: #f07566;
             height: 13px;
         }
 
+    }
+
+    &__copyright-wrap {
+        padding: 58px;
+        width: 375px;
     }
 
     &__list-name {
@@ -2001,8 +2008,9 @@ $secondary-color: #f07566;
     }
 
     &__copyright-wrap {
+        padding: 58px;
+        width: 375px;
         margin: 0 auto;
-        width: 205px;
     }
 
     &__copyright {
@@ -2015,6 +2023,7 @@ $secondary-color: #f07566;
     }
 
     &__policy-links {
+        cursor: pointer;
         margin: 0 auto;
         display: grid;
         justify-items: center;
@@ -2026,7 +2035,6 @@ $secondary-color: #f07566;
     }
 
     @media screen and (min-width: 900px) {
-
         padding: 36px 135px 53px 135px;
 
         &__nav {
@@ -2062,6 +2070,26 @@ $secondary-color: #f07566;
         &__policy-link {
             margin: 0;
             text-align: left;
+            transition: all .5s ease-in-out;
+
+        &_first {
+
+            &:hover {
+                color: $secondary-color;
+                opacity: .5;
+                transform: scale(1.2);
+            }
+        }
+
+        &_second {
+
+            &:hover {
+                color: $secondary-color;
+                opacity: .5;
+                transform: scale(1.2);
+            }
+        }
+
         }
 
         &__logo-svg {
@@ -2073,7 +2101,6 @@ $secondary-color: #f07566;
                 transform: scale(1.4);
             }
         }
-
     }
 
 
