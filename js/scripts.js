@@ -2,18 +2,24 @@
 
 $(document).ready(function () {
   $(".section__card-carousel").slick({
-    mobileFirst: true,
-    dots: true,
-    arrows: false,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: true,
-    responsive: [{
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-      }
-    }]
+      mobileFirst: true,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true,
+      responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+          }
+        }]
   });
 })
 

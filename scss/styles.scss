@@ -30,6 +30,10 @@ $main-color: #333;
 $primary-color: #fff;
 $secondary-color: #f07566;
 
+html, body {
+    overflow-x: hidden;
+}
+
 
 * {
     margin: 0;
@@ -38,13 +42,11 @@ $secondary-color: #f07566;
 }
 
 .body {
-    position: relative;
-    margin: 0 auto;
+    min-width: 375px;
     background-image: url(../img/svg/bg-yellow.svg);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 422px 461px;
-    z-index: -5;
 
     @media screen and (min-width: 900px) {
         background-size: 844px 921px;
@@ -53,10 +55,14 @@ $secondary-color: #f07566;
 
 
 .container {
-    padding-top: 16px;
-    min-width: 375px;
-    width: 375px;
+    padding: 16px;
+    min-width: 329px;
+    width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 400px) {
+        padding: 15px;
+    }
 
     @media screen and (min-width: 900px) {
 
@@ -75,7 +81,7 @@ $secondary-color: #f07566;
     margin: 0 auto;
 
     &__inner {
-        width: 375px;
+        min-width: 329px;
         margin: 0 auto;
         height: 50px;
         position: relative;
@@ -96,6 +102,10 @@ $secondary-color: #f07566;
         height: 48px;
         background: $secondary-color;
         border-radius: 50%;
+
+        @media screen and (max-width: 400px) {
+            
+        }
     }
 
     &__burger-icon {
@@ -212,12 +222,9 @@ $secondary-color: #f07566;
         }
     }
 
-}
-
-.header {
     &.menu-open {
         background: $secondary-color;
-        padding-top: 16px;
+        padding: 16px 16px 0 16px;
         position: absolute;
         top: 0;
         left: 0;
@@ -227,11 +234,14 @@ $secondary-color: #f07566;
 
         .header {
 
+            @media screen and (min-width: 400px) {
+                padding: 15px;
+            }
+
             &__inner {
-                width: 375px;
+                min-width: 329px;
                 min-height: 200px;
                 margin: 0 auto;
-
             }
 
             &__logo-svg {
@@ -242,10 +252,13 @@ $secondary-color: #f07566;
             }
 
             &__nav {
+                min-width: 329px;
                 padding-top: 40px;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 flex-wrap: wrap;
+                margin: 0 auto;
             }
 
             &__nav-list {
@@ -257,7 +270,7 @@ $secondary-color: #f07566;
             }
 
             &__nav-item:not(:last-child) {
-                padding-right: 22px;
+                padding-right: 15px;
             }
 
             &__item-link {
@@ -278,6 +291,7 @@ $secondary-color: #f07566;
                 border: 1px solid #FFFAEA;
                 border-radius: 5px;
                 margin-bottom: 15px;
+                margin: 0 auto;
                 background-color: $secondary-color;
             }
 
@@ -306,8 +320,8 @@ $secondary-color: #f07566;
             }
         }
     }
-}
 
+}
 
 .header.menu-open+.section {
     padding-top: 88px;
@@ -347,14 +361,6 @@ $secondary-color: #f07566;
         background-image: url(../img/bg-images/media-shape.png);
         background-repeat: no-repeat;
         background-size: cover;
-    }
-
-    &__GREEN {
-        position: absolute;
-        left: 10px;
-        background-color: green;
-        width: 128px;
-        height: 128px;
     }
 
     &__video-control {
@@ -469,6 +475,11 @@ $secondary-color: #f07566;
         box-shadow: 0px 16px 24px rgba(77, 60, 0, 0.16109);
         border-radius: 100% 100% 8px 100%;
 
+        @media screen and (max-width: 400px) {
+            position: absolute;
+            left: -20px;
+        }
+
         &_positioned {
             left: -5px;
             top: 40px;
@@ -483,12 +494,17 @@ $secondary-color: #f07566;
                 position: absolute;
                 left: 20px;
                 top: 40px;
+
+                @media screen and (max-width: 400px) {
+                    position: absolute;
+                    left: 0;
+                }
             }
         }
     }
 
     &__folder {
-        width: 375px;
+        min-width: 329px;
         margin: 0 auto;
         position: relative;
 
@@ -515,7 +531,7 @@ $secondary-color: #f07566;
 
         &_small {
             position: absolute;
-            left: 7px;
+            left: 18px;
             bottom: 33px;
             width: 326px;
             height: 196px;
@@ -525,16 +541,20 @@ $secondary-color: #f07566;
             &_positioned {
                 position: absolute;
                 bottom: -8px;
-                left: 15px;
+                left: -5px;
             }
 
             &_landscape {
                 position: absolute;
-                right: 40px;
+                right: 43px;
                 bottom: -10px;
                 width: 104px;
                 height: 263px;
                 z-index: -2;
+
+                @media screen and (max-width: 400px) {
+                    right: 25px;
+                }
             }
         }
 
@@ -545,6 +565,11 @@ $secondary-color: #f07566;
             width: 153px;
             height: 192px;
             z-index: -2;
+
+            @media screen and (max-width: 400px) {
+                position: absolute;
+                right: 25px;
+            }
         }
     }
 
@@ -552,8 +577,8 @@ $secondary-color: #f07566;
         position: absolute;
         bottom: -25px;
         left: -20px;
-        width: 140px;
-        height: 79px;
+        width: 120px;
+        height: 59px;
         background-image: url(../img/bg-images/graph.png);
         background-size: cover;
         z-index: 1;
@@ -573,16 +598,21 @@ $secondary-color: #f07566;
             background-color: $secondary-color;
             border-radius: 4px;
             position: absolute;
-            left: 0;
+            left: 15px;
             bottom: 25px;
             width: 72px;
             height: 90px;
             z-index: -1;
 
+            @media screen and (max-width: 400px) {
+                left: -5px;
+                
+            }
+
             &_positioned {
                 position: absolute;
                 bottom: -15px;
-                left: 8px;
+                left: -10px;
             }
         }
 
@@ -590,10 +620,25 @@ $secondary-color: #f07566;
             background-color: $secondary-color;
             border-radius: 4px;
             position: absolute;
-            bottom: -18px;
-            right: 135px;
+            top: -15px;
+            right: 35px;
             width: 130px;
             height: 77px;
+            z-index: -1;
+
+            @media screen and (max-width: 400px) {
+                right: 20px;
+            }
+        }
+
+        &_bg-bottom {
+            background-color: $secondary-color;
+            border-radius: 4px;
+            width: 130px;
+            height: 77px;
+            position: absolute;
+            bottom: -20px;
+            left: 100px;
             z-index: -1;
         }
 
@@ -629,14 +674,15 @@ $secondary-color: #f07566;
         background: url(../img/bg-images/wavy-line.png) no-repeat;
         box-shadow: 0px 24px 48px rgba(86, 66, 0, 0.0799083);
         background-size: cover;
-        width: 150px;
+        width: 145px;
         height: 88px;
+        border-radius: 4px;
     }
 
     &__marketing-bg-img {
         position: absolute;
         right: 5px;
-        bottom: 100px;
+        bottom: 110px;
         background: url(../img/bg-images/marketing.png) no-repeat;
         background-size: cover;
         width: 88px;
@@ -863,7 +909,7 @@ $secondary-color: #f07566;
 
     &__img-wrap {
         margin: 0 auto;
-        width: 342px;
+        width: 329px;
         height: 275px;
         overflow: hidden;
         border-radius: 4px 50px 4px 4px;
@@ -1253,7 +1299,7 @@ $secondary-color: #f07566;
     &__review-carousel {
         box-shadow: 0px 24px 48px rgba(0, 17, 86, 0.0799083);
         margin-top: 20px;
-        min-width: 375px;
+        min-width: 329px;
         width: 100%;
 
         &::after {
@@ -1296,7 +1342,7 @@ $secondary-color: #f07566;
     }
 
     &__article-heading {
-        margin: 23px 0 0 16px;
+        margin-top: 23px;
         font-family: $primary-font-stack;
         font-size: 24px;
         line-height: 1.3;
@@ -1611,14 +1657,6 @@ $secondary-color: #f07566;
                 right: -32px;
                 width: 216px;
                 height: 128px;
-            }
-
-
-
-            &_bg-bottom {
-                border-radius: 8px;
-                top: 384px;
-                left: 89px;
             }
         }
 
@@ -2178,6 +2216,10 @@ $secondary-color: #f07566;
     @media screen and (min-width: 900px) {
         right: 390px;
     }
+
+    @media screen and (max-width: 400px) {
+        right: 137px;
+    }
 }
 
 .slick-prev:before {
@@ -2197,5 +2239,9 @@ $secondary-color: #f07566;
 
     @media screen and (min-width: 900px) {
         left: 24px;
+    }
+
+    @media screen and (max-width: 400px) {
+        left: 137px;
     }
 }
