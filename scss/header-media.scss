@@ -1,0 +1,89 @@
+$primary-font-stack: 'Hind Siliguri',
+sans-serif;
+$secondary-font-stack: 'Work Sans',
+sans-serif;
+$primary-font-size: 40px;
+$secondary-font-size: 16px;
+$main-color: #333;
+$primary-color: #fff;
+$secondary-color: #f07566;
+
+.header {
+
+    @media screen and (min-width: 900px) {
+
+        width: 100%;
+        padding-bottom: 0;
+
+        &__logo-svg {
+
+            &:hover {
+                fill: $secondary-color;
+            }
+        }
+
+        &__btn {
+
+            cursor: pointer;
+
+            &:hover {
+                background-color: $secondary-color;
+                border-color: #fef9e9;
+                color: #fef9e9;
+            }
+        }
+
+        &__burger {
+            display: none;
+        }
+
+        &__nav {
+            margin-left: 42px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nav-list {
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__btn {
+            font-family: $primary-font-stack;
+            font-size: $secondary-font-size;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $secondary-color;
+            background: none;
+            width: 138px;
+            height: 48px;
+            border: 1px solid rgba(240, 117, 102, 0.236809);
+            border-radius: 6px;
+        }
+
+        &__inner {
+            padding: 0 23px;
+            max-width: 1170px;
+            width: 100%;
+        }
+
+        &__nav-item {
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+
+        &__item-link {
+            text-decoration: none;
+            color: $main-color;
+            font-family: $secondary-font-stack;
+            font-size: $secondary-font-size;
+        }
+    }
+}

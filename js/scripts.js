@@ -39,7 +39,7 @@ $(document).ready(function () {
     arrows: false,
     infinite: true,
     autoplay: true,
-    speed: 4000,
+    speed: 7000,
     slidesToShow: 6,
     slidesToScroll: 6,
     responsive: [{
@@ -116,38 +116,6 @@ let header = document.querySelector("#header");
 burger.onclick = function () {
   header.classList.toggle("menu-open");
 };
-
-var a = 0;
-$(window).scroll(function () {
-
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.section__counter-heading').each(function () {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-
-        {
-          duration: 2000,
-          easing: 'swing',
-          step: function () {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function () {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
-
-        });
-    });
-    a = 1;
-  }
-
-});
 
 const exampleModal = document.getElementById('contact')
 exampleModal.addEventListener('show.bs.modal', event => {

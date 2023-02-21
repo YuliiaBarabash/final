@@ -1,0 +1,137 @@
+$primary-font-stack: 'Hind Siliguri',
+sans-serif;
+$secondary-font-stack: 'Work Sans',
+sans-serif;
+$primary-font-size: 40px;
+$secondary-font-size: 16px;
+$main-color: #333;
+$primary-color: #fff;
+$secondary-color: #f07566;
+
+.footer {
+    width: 100%;
+    margin-top: 112px;
+    background: #3F3836;
+
+    &__logo-svg {
+        width: 81px;
+        height: 48px;
+        fill: $primary-color;
+        margin-bottom: 63px
+    }
+
+    &__svg-icon {
+        width: 9px;
+        height: 16px;
+        fill: $primary-color;
+
+        &_inst-size {
+            stroke: none;
+            width: 16px;
+        }
+
+        &_tw-size {
+            width: 16px;
+            height: 13px;
+        }
+
+    }
+
+    &__copyright-wrap {
+        padding: 58px;
+        width: 375px;
+    }
+
+    &__list-name {
+        font-family: $primary-font-stack;
+        font-size: $secondary-font-size;
+        color: $secondary-color;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 2;
+    }
+
+    &__list {
+        margin: 32px 0 64px 0;
+
+        &_horizontal {
+            display: flex;
+
+        }
+    }
+
+    &__list-item {
+
+        &:not(:last-of-type) {
+            margin-right: 8px;
+        }
+    }
+
+    &__list-item-link,
+    &__policy-link {
+        text-decoration: none;
+        color: $primary-color;
+        font-family: $secondary-font-stack;
+        font-size: $secondary-font-size;
+        line-height: 2;
+    }
+
+    &__list-item-link {
+
+        &:hover {
+            animation: shake 2s infinite;
+        }
+
+        &_bg-red {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            background-color: $secondary-color;
+            border-radius: 50%;
+        }
+    }
+
+    &__policy-link {
+        margin-top: 32px;
+    }
+
+    &__bottom {
+        padding: 58px 50px 69px 50px;
+    }
+
+    &__border {
+        margin: 0 auto;
+        width: 375px;
+        height: 1px;
+        background-color: #494949;
+    }
+
+    &__copyright-wrap {
+        padding: 58px;
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    &__copyright {
+        font-family: $secondary-font-stack;
+        font-size: $secondary-font-size;
+        line-height: 2;
+        color: $primary-color;
+        opacity: .5;
+        text-align: center;
+    }
+
+    &__policy-links {
+        cursor: pointer;
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__nav {
+        padding: 76px 23px 0;
+    }
+}

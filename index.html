@@ -8,51 +8,46 @@
   <link rel="stylesheet" href="./css/slick.css">
   <link rel="stylesheet" href="./css/slick-theme.css">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.min.css" />
   <title>Creative Marketing</title>
 </head>
 
 <body class="body">
   <!-- HEADER -->
-  <div class="container">
-    <header id="header" class="header">
-      <div class="header__inner">
-        <div class="header__burger">
-          <button id="burger-icon" class="header__burger-icon">
-            <span class="header__burger-icon-inner"></span>
-          </button>
-        </div>
-        <a href="#" class="header__logo" id="logo">
-          <svg class="header__logo-svg">
-            <use xlink:href="./img/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__item-link" href="#about">About</a></li>
-            <li class="header__nav-item"><a class="header__item-link" href="#portfolio">Portfolio</a></li>
-            <li class="header__nav-item"><a class="header__item-link" href="#service">Service</a></li>
-            <li class="header__nav-item"><a class="header__item-link" href="#newsletter">Newsletter</a></li>
-            <li class="header__nav-item"><a class="header__item-link" href="#blog">Blog</a></li>
-          </ul>
-          <button type="button" class="header__btn" data-bs-toggle="modal" data-bs-target="#contact">
-            contact
-          </button>
-        </nav>
-
+  <header id="header" class="header">
+    <div class="header__inner">
+      <div class="header__burger">
+        <button id="burger-icon" class="header__burger-icon">
+          <span class="header__burger-icon-inner"></span>
+        </button>
       </div>
-    </header>
-    <!-- MAIN -->
-    <section class="section   section_desktop-padding-company">
+      <a href="#" class="header__logo" id="logo">
+        <svg class="header__logo-svg">
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__item-link" href="#about">About</a></li>
+          <li class="header__nav-item"><a class="header__item-link" href="#portfolio">Portfolio</a></li>
+          <li class="header__nav-item"><a class="header__item-link" href="#service">Service</a></li>
+          <li class="header__nav-item"><a class="header__item-link" href="#newsletter">Newsletter</a></li>
+          <li class="header__nav-item"><a class="header__item-link" href="#blog">Blog</a></li>
+        </ul>
+        <button type="button" class="header__btn" data-bs-toggle="modal" data-bs-target="#contact">
+          contact
+        </button>
+      </nav>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <div class="container">
+    <section class="section section_direction padding_company">
       <div class="section__description">
-        <div class="section__title-wrap section__title-wrap_padding-company">
-          <div class="section__dot"></div>
-          <h3 class="section__title">company</h3>
-        </div>
+        <h3 class="section__title section__title_padding-company">company</h3>
         <h1 class="section__heading">
           Creative
-          <p class="section__heading_colored">Marketing</p>
+          <span class="section__heading_colored">Marketing</span>
         </h1>
         <p class="section__text">
           The sky was cloudless and of a deep dark blue the spectacle before
@@ -61,22 +56,17 @@
         <a class="section__button" href="#">explore</a>
       </div>
       <div class="section__folder">
-        <div class="section__bg-y">
-          <div class="section__bg-red"></div>
+        <div class="section__img-wrap section__img-wrap_left-rounded section__bg-label">
+          <img class="section__img" src="./img/folders/img-main.jpg" alt="person reading a book">
           <div class="section__label"><svg class="section__icon-svg">
               <use xlink:href="./img/sprite.svg#creative"></use>
             </svg></div>
-          <div class="section__graph"></div>
-
         </div>
       </div>
     </section>
-    <section class="section  section_desktop-padding-about">
-      <div class="section__description section__description_order-first">
-        <div class="section__title-wrap">
-          <div class="section__dot"></div>
-          <h3 class="section__title" id="about">about</h3>
-        </div>
+    <section class="section section_reversed padding_about">
+      <div class="section__description">
+        <h3 class="section__title" id="about">about</h3>
         <h2 class="section__sub-heading">We Build PRO Business</h2>
         <h4 class="section__list-name">Excited to work with customers</h4>
         <ul class="section__list">
@@ -92,12 +82,10 @@
         </ul>
         <a class="section__button" href="#">learn more</a>
       </div>
-      <div class="section__folder  section__folder_photo section__folder_photo_order-zero">
-        <div class="section__img-wrap">
-          <div class="section__bg-y section__bg-y_small">
+      <div class="section__folder  section__folder_photo">
+        <div class="section__img-wrap section__bg-label_about">
+          <div class="section__bg-yellow section__bg-yellow_small">
           </div>
-          <div class="section__bg-red_small"></div>
-          <div class="section__chart-img"></div>
           <div class="section__label section__label_higher">
             <svg class="section__icon-svg section__icon-svg_desktop-size">
               <use xlink:href="./img/sprite.svg#about"></use>
@@ -154,10 +142,7 @@
   <div class="container">
     <section class="section section_desktop-positioned">
       <div class="section__description">
-        <div class="section__title-wrap section__title-wrap_padding-features">
-          <div class="section__dot"></div>
-          <h3 class="section__title section__title_spaced">features</h3>
-        </div>
+        <h3 class="section__title section__title_spaced section__title_padding-features">features</h3>
         <h2 class="section__sub-heading">Smart Complex Solutions</h2>
         <p class="section__text section__text_sub">
           Stars had ceased to twinkle the same illusion which lifts the horizon
@@ -177,28 +162,23 @@
         </div>
       </div>
       <div class="section__folder">
-        <div class="section__img-wrap section__img-wrap_left-rounded">
-          <div class="section__bg-red section__bg-red_landscape"></div>
-          <div class="section__bg-y section__bg-y_small_landscape">
+        <div class="section__img-wrap section__img-wrap_left-rounded section__bg-label_features">
+          <div class="section__bg-yellow section__bg-yellow_small_landscape">
           </div>
           <div
-            class="section__label section__label_higher section__label_higher_positioned section__label_desktop-positioned">
+            class="section__label">
             <svg class="section__icon-svg section__icon-svg_lg">
               <use xlink:href="./img/sprite.svg#features"></use>
             </svg>
           </div>
-          <div class="section__wavy-line-img"></div>
           <img class="section__img" src="./img/folders/folder-features.jpg" alt="marketing strategy" />
         </div>
       </div>
     </section>
-    <section class="section_centered section__portfolio section_desktop-padding-portfolio">
+    <section class="section_centered section__portfolio padding_portfolio">
       <div class="section__description section__description_centered">
-        <div class="section__title-wrap section__title-wrap_padding-portfolio">
-          <div class="section__dot"></div>
-          <h3 class="section__title section__title_spaced" id="portfolio">portfolio</h3>
-        </div>
-        <h2 class="section__sub-heading section__sub-heading_padding-portfolio">Company Cases</h2>
+        <h3 class="section__title section__title_spaced section__title_padding-portfolio" id="portfolio">portfolio</h3>
+        <h2 class="section__sub-heading">Company Cases</h2>
         <p class="section__text section__text_sub section__text_sub_muted section__text_centered">
           Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had
           ceased to twinkle the same illusion which lifts the horizon of the sea.
@@ -206,28 +186,28 @@
       </div>
       <div class="section__gallery">
         <div class="section__gallery-item">
-          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_first">
+          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_number" data-count="01">
             <img class="section__img" src="./img/portfolio/portfolio-first.jpg" alt="a man working on a laptop" />
           </div>
           <h3 class="section__img-title">Face of Mars</h3>
           <p class="section__gallery-text">Will be a rare experience</p>
         </div>
         <div class="section__gallery-item">
-          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_second">
+          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_number" data-count="02">
             <img class="section__img" src="./img/portfolio/portfolio-second.jpg" alt="charts on screen" />
           </div>
           <h3 class="section__img-title">Heavenly Bodies</h3>
           <p class="section__gallery-text">Tour round the world should form</p>
         </div>
         <div class="section__gallery-item">
-          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_third">
+          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_number" data-count="03">
             <img class="section__img" src="./img/portfolio/portfolio-third.jpg" alt="photo of videocall" />
           </div>
           <h3 class="section__img-title">Liberal Education</h3>
           <p class="section__gallery-text">Truly it was a great journey</p>
         </div>
         <div class="section__gallery-item">
-          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_fourth">
+          <div class="section__img-wrap section__img-wrap_gallery section__img-wrap_number" data-count="04">
             <img class="section__img" src="./img/portfolio/portfolio-forth.jpg" alt="group work" />
           </div>
           <h3 class="section__img-title">Though the Gravity</h3>
@@ -291,12 +271,9 @@
         <img class="section__brand-img" src="./img/brand-img/mediafury.svg" alt="Media Fury logo" />
       </div>
     </section>
-    <section class="section section_desktop-padding-service">
+    <section class="section padding_service">
       <div class="section__description section__description">
-        <div class="section__title-wrap section__title-wrap_padding-service">
-          <div class="section__dot"></div>
-          <h3 class="section__title" id="service">service</h3>
-        </div>
+        <h3 class="section__title section__title_padding-service" id="service">service</h3>
         <h2 class="section__sub-heading">Marketing and
           Creative Consulting</h2>
         <p class="section__text section__text_sub">
@@ -309,10 +286,10 @@
                 <use xlink:href="./img/sprite.svg#clients"></use>
               </svg>
             </div>
-            <h3 class="section__number-heading">42+<p
-                class="section__text section__text_sub section__text_sub_muted  section__text_no-padding">
-                Clients</p>
-            </h3>
+            <div class="section__number-heading">42+<span
+                class="section__text section__text_sub section__text_sub_muted  section__text_margin">
+                Clients</span>
+            </div>
           </div>
           <div class="section__numbers-item">
             <div class="section__svg-wrap_blue">
@@ -320,31 +297,27 @@
                 <use xlink:href="./img/sprite.svg#successful"></use>
               </svg>
             </div>
-            <h3 class="section__number-heading">
-              73%<p class="section__text section__text_sub section__text_sub_muted section__text_no-padding">Successful
-              </p>
-            </h3>
+            <div class="section__number-heading">
+              73%<span class="section__text section__text_sub section__text_sub_muted section__text_margin">Successful
+              </span>
+            </div>
           </div>
         </div>
       </div>
       <div class="section__folder section__folder_margin">
-        <div class="section__img-wrap section__img-wrap_left-rounded">
-          <div class="section__label section__label_higher_positioned">
+        <div class="section__img-wrap section__img-wrap_left-rounded section__bg-label_service">
+          <img class="section__img" src="./img/folders/folder-service.jpg" alt="People working on a computer" />
+          <div class="section__label">
             <svg class="section__icon-svg section__icon-svg_xlg">
               <use xlink:href="./img/sprite.svg#marketing"></use>
             </svg>
           </div>
-          <div class="section__bg-red_bg-bottom">
+          <div class="section__bg-yellow section__bg-yellow_xs">
           </div>
-          <div class="section__bg-y section__bg-y_xs">
-          </div>
-          <div class="section__marketing-bg-img"></div>
-          <img class="section__img" src="./img/folders/folder-service.jpg" alt="People working on a computer" />
         </div>
       </div>
     </section>
   </div>
-
 
   <!-- Секция с видео -->
   <section class="section_media-colored">
@@ -372,12 +345,9 @@
   </section>
 
   <div class="container">
-    <section class="section_centered section_desktop-padding-team">
+    <section class="section_centered padding_team">
       <div class="section__description section__description_centered">
-        <div class="section__title-wrap section__title-wrap_padding-team">
-          <div class="section__dot"></div>
-          <h3 class="section__title section__title_spaced">team</h3>
-        </div>
+        <h3 class="section__title section__title_spaced section__title_padding-team">team</h3>
         <h2 class="section__sub-heading section__sub-heading">Strong Members</h2>
         <p class="section__text section__text_sub section__text_sub_muted section__text_centered">
           Formed a great hindrance to my speed, I resolved, contrary to my first intention, to make the being of a
@@ -457,12 +427,9 @@
     </div>
   </div>
   <div class="container">
-    <section class="section section_reversed section_desktop-padding-reviews">
+    <section class="section section_reversed padding_reviews">
       <div class="section__description">
-        <div class="section__title-wrap">
-          <div class="section__dot"></div>
-          <h3 class="section__title">testimonials</h3>
-        </div>
+        <h3 class="section__title">testimonials</h3>
         <h2 class="section__sub-heading">Reviews</h2>
         <div class="section__review-carousel">
           <div class="section__review-card">
@@ -496,14 +463,13 @@
       </div>
       <div class="section__folder section__folder_margin-lg">
 
-        <div class="section__img-wrap section__img-wrap_resized-sm">
-          <div class="section__label">
+        <div class="section__img-wrap section__img-wrap_resized-sm section__bg-label_reviews">
+          <div class="section__label section__label_higher">
             <svg class="section__icon-svg section__icon-svg_xlg">
               <use xlink:href="./img/sprite.svg#testimonials"></use>
             </svg>
           </div>
-          <div class="section__bg-y section__bg-y_small section__bg-y_small_positioned"></div>
-          <div class="section__bg-red_small section__bg-red_small_positioned"></div>
+          <div class="section__bg-yellow section__bg-yellow_small section__bg-yellow_small_positioned"></div> 
           <img class="section__img" src="./img/folders/folder-testimonials.jpg" alt="person working on a laptop" />
         </div>
       </div>
@@ -524,9 +490,6 @@
           part of a liberal education.
         </p>
       </div>
-      <div class="section__folder">
-        <div class="section__bg-image"></div>
-      </div>
     </section>
 
     <section class="section_no-grid">
@@ -540,12 +503,9 @@
       </form>
     </section>
 
-    <section class="section_centered section_desktop-padding-articles">
+    <section class="section_centered padding_articles">
       <div class="section__description section__description_centered">
-        <div class="section__title-wrap section__title-wrap_padding-articles">
-          <div class="section__dot"></div>
-          <h3 class="section__title section__title_spaced" id="blog">latest articles</h3>
-        </div>
+        <h3 class="section__title section__title_spaced section__title_padding-articles" id="blog">latest articles</h3>
         <h2 class="section__sub-heading">Check Our Insights</h2>
         <p class="section__text section__text_sub section__text_sub_muted section__text_centered">
           See the face of Mars, anyhow, and that will be a rare experience seems to me that a view of the heavenly
@@ -563,9 +523,9 @@
                 alt="bedroom design photo">
             </div>
             <div class="section__card-description section__card-description_main">
-              <h2 class="section__sub-heading section__sub-heading_small">What looked like a small patch of purple grass
+              <h2 class="section__sub-heading section__sub-heading_small section__main-card-name">What looked like a small patch of purple grass
               </h2>
-              <p class="section__text">Truly it was a great journey, and in it I met with many, whom to know was to
+              <p class="section__text section__main-card-text">Truly it was a great journey, and in it I met with many, whom to know was to
                 love.
               </p>
             </div>
@@ -708,9 +668,6 @@
   <script type="text/javascript" src="./js/jquery-3.6.3.min.js"></script>
   <script type="text/javascript" src="./js/slick.js"></script>
   <script type="text/javascript" src="./js/scripts.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
-  </script>
 
 </body>
 
