@@ -11,11 +11,10 @@ $secondary-color: #f07566;
 .header {
 
     @media screen and (min-width: 900px) {
-
-        width: 100%;
         padding-bottom: 0;
 
         &__logo-svg {
+            transition: all .5s ease-in-out;
 
             &:hover {
                 fill: $secondary-color;
@@ -63,20 +62,11 @@ $secondary-color: #f07566;
             height: 48px;
             border: 1px solid rgba(240, 117, 102, 0.236809);
             border-radius: 6px;
+            transition: all .5s ease-in-out;
         }
 
         &__inner {
-            padding: 0 23px;
             max-width: 1170px;
-            width: 100%;
-        }
-
-        &__nav-item {
-            transition: all .5s ease-in-out;
-
-            &:hover {
-                transform: scale(1.5);
-            }
         }
 
         &__item-link {
@@ -84,6 +74,11 @@ $secondary-color: #f07566;
             color: $main-color;
             font-family: $secondary-font-stack;
             font-size: $secondary-font-size;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                color: $secondary-color;
+            }
         }
     }
 }

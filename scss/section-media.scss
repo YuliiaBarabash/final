@@ -101,6 +101,7 @@ $secondary-color: #f07566;
             width: 170px;
             margin-bottom: 0;
             letter-spacing: 1px;
+            transition: all .5s ease-in-out;
 
             &:hover {
                 background-color: #fef9e9;
@@ -269,6 +270,7 @@ $secondary-color: #f07566;
         &__input {
             width: 286px;
             margin: 0 30px 0 0;
+            transition: all .5s ease-in-out;
 
             &:hover {
                 border: 1px solid $secondary-color;
@@ -375,13 +377,15 @@ $secondary-color: #f07566;
             &_gallery {
                 height: 384px;
                 border-radius: 8px;
+                position: relative;
             }
 
             &_number {
                 &::before {
                     content: attr(data-count);
                     position: absolute;
-                    transform: translateY(300%);
+                    bottom: 0;
+                    left: 0;
                     display: inline-flex;
                     justify-content: center;
                     align-items: center;
@@ -581,6 +585,7 @@ $secondary-color: #f07566;
             top: 50%;
             left: 306px;
             margin: -64px 0 0 0;
+            transition: all .5s ease-in-out;
 
             &:hover {
                 background-color: #b9912d;
@@ -621,6 +626,7 @@ $secondary-color: #f07566;
 
         &__btn {
             grid-column: span 2;
+            transition: all .5s ease-in-out;
 
             &:hover {
                 cursor: pointer;
